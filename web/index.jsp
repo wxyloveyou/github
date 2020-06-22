@@ -1,16 +1,36 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: WXY
-  Date: 2020/6/22
-  Time: 15:11
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!Doctype html>
-<html lang="en">
-<head>
+<<html>
+<head>	<head>
+    <title></title>	    <title></title>
+</head>	</head>
+<body>	<body>
+<h1>24点小游戏</h1>
+<form action="index.jsp">
+    <input type="text" name="A">
+    <input type="text" name="B">
+    <input type="text" name="C">
+    <input type="text" name="D">
+    <input type="submit">
+    <input type="reset">
+</form>
 
-;asdfjkljasl';
-k'jk;jhljlj
+A:<%=request.getParameter("A")%><br/>
+B:<%=request.getParameter("B")%><br/>
+C:<%=request.getParameter("C")%><br/>
+D:<%=request.getParameter("D")%><br/>
+<%
+    int a=0;
+    int b=0;
+    int c=0;
+    int d=0;
+    try{
+        a=Integer.parseInt(request.getParameter("A"));
+        b=Integer.parseInt(request.getParameter("B"));
+        c=Integer.parseInt(request.getParameter("C"));
+        d=Integer.parseInt(request.getParameter("D"));
+    }catch(Exception e){
+    }
+    String result=ai.Engine.solve24(a,b,c,d);
+    out.println(result);
+    </body>	%>
 </body>
-</html>
+</html>	</html>
