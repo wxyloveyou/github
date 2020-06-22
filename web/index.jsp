@@ -9,9 +9,8 @@
 <!Doctype html>
 <html lang="en">
 <head>
- cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></
-asfdjajsfd
-klsdajfkl
-]
+
+;asdfjkljasl';
+k'jk;jhljlj
 </body>
 </html>
