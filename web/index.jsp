@@ -22,6 +22,8 @@
 <button>密码</button>
 <input type="password" maxlength="6">
 <br>
+<button>忘记密码</button>
+<br>
 <button type="button" class="btn btn-primary">登陆</button>
 <button type="button" class="btn btn-warning">重置</button>
 </body>
