@@ -16,15 +16,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<button>账号</button>
-<input type="text">
-<br>
-<button>密码</button>
-<input type="password" maxlength="6">
-<br>
-<button>忘记密码</button>
-<br>
-<button type="button" class="btn btn-primary">登陆</button>
-<button type="button" class="btn btn-warning">重置</button>
+hello world
+
 </body>
 </html>
