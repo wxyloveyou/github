@@ -11,6 +11,8 @@
     <title>$Title$</title>
   </head>
   <body>
+nihao ha
+
 hello world
 
   $END$
