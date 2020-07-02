@@ -1,36 +1,48 @@
-<<html>
-<head>	<head>
-    <title></title>	    <title></title>
-</head>	</head>
-<body>	<body>
-<h1>24点小游戏</h1>
-<form action="index.jsp">
-    <input type="text" name="A">
-    <input type="text" name="B">
-    <input type="text" name="C">
-    <input type="text" name="D">
-    <input type="submit">
-    <input type="reset">
-</form>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<html>
+<head>
 
-A:<%=request.getParameter("A")%><br/>
-B:<%=request.getParameter("B")%><br/>
-C:<%=request.getParameter("C")%><br/>
-D:<%=request.getParameter("D")%><br/>
-<%
-    int a=0;
-    int b=0;
-    int c=0;
-    int d=0;
-    try{
-        a=Integer.parseInt(request.getParameter("A"));
-        b=Integer.parseInt(request.getParameter("B"));
-        c=Integer.parseInt(request.getParameter("C"));
-        d=Integer.parseInt(request.getParameter("D"));
-    }catch(Exception e){
-    }
-    String result=ai.Engine.solve24(a,b,c,d);
-    out.println(result);
-    </body>	%>
+    <title>My calculator</title>
+
+</head>
+
+<body style="text-align:center;">
+
+<form action="index.jsp" method="post">
+    <table width="404" border="1">
+        <tr>
+            <td colspan="3">计算器</td>
+        </tr>
+        <tr>
+            <td>第一个数</td>
+            <td>
+                <input type="text" name="firstNum"/>
+            </td>
+        </tr>
+        <tr>
+            <td>选择操纵</td>
+            <td>
+                <select name="operator">
+                    <option value='+'>+</option>
+                    <option value='-'>-</option>
+                    <option value='*'>*</option>
+                    <option value='/'>/</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>第二个数</td>
+            <td>
+                <input type="text" name="secondNum"/>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="submit" value="计算"/>
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
-</html>	</html>
+</html>
